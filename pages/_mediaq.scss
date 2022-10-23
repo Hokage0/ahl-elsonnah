@@ -1,0 +1,93 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    header{
+
+    #move {
+        font-size: 30px !important;
+       
+    }
+    .typed-cursor { font-size: 38px !important;}
+    }
+
+    .se-works {
+        .butn {
+            span {
+                display: inline-block;
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+
+header{
+    .navbar-toggler {
+        background-color: white;
+    }
+#move {
+    font-size: 40px !important;
+    
+}
+.typed-cursor { font-size: 48px !important;}
+
+.navbar {
+    background-color: #10070ed3;
+    .navbar-brand a {
+        padding: 10px;
+    }
+    .nav-link {
+        
+        padding-left:10px;
+    }
+    
+}
+
+.arrow { bottom: -15vh !important;}
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 750px) { 
+    header{
+        .navbar {
+            padding-left: 5px ;
+            padding-right: 5px ;
+            .navbar-nav {
+                border-radius: 0 0 20px  20px;
+                border-bottom: 1px solid white;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+            }
+        }
+        #move {
+            font-size: 27px !important;}
+        .typed-cursor { font-size: 30px !important;}
+        }
+}
+@media (max-width: 576px) { 
+
+    // header {
+    //     .content-header {
+    //         p {
+    //             font-size:14px ;
+    //         }
+    //     }
+    // }
+    .se-contact {
+        form {
+            padding: 10px;
+            select {
+                width: 100%;
+             }
+        }
+    }
+
+ }

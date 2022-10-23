@@ -1,0 +1,14 @@
+.se-ourpart {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .mbri-quote {font-size: 50px;color: $third-color}
+    @extend .white;
+    background-color: $backC-second;
+
+    .carousel-inner {
+        height: 280px;
+    }
+
+}
+
+

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head 
+        meta(charset="utf-8")
+        meta(meta name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        link(href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet")
+        include includes/styles.pug
+    body
+        // Start Header
+        include pages/header.pug
+        // End Header
+        // Start section About
+        include pages/about.pug
+        include pages/services.pug
+        include pages/team.pug
+        include pages/ourpart.pug
+        //- include pages/works.pug
+        include pages/contact.pug
+        include pages/footer.pug
+
+        div(class="up-btu" data-target="home")
+            i(class="fas fa-chevron-up")
+
+
+        include includes/scripts.pug
+        script 
+            | var typed3 = new Typed('#move', {
+            | strings: ['We Are Ahl Elsonnah','We Are Graphic Designers','We Are Software Developers','We Are E-Marketers','We Are Technologists','We Can Do Better'],
+            //- | strings: ['نحن أهل السنة','نحن مصممين جرافيك','نحن مطورين برمجيات','نحن مسوقين','نحن صناع فيديو','نحن  تقنيين','نحن  يمكننا القيام بعمل أفضل'],
+            | typeSpeed: 100,
+            | backSpeed: 100,
+            | smartBackspace: true, // this is a default
+            | loop: true
+            | });
+ 
+ 
+
+
+
+        

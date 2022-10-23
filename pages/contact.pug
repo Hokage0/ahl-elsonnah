@@ -1,0 +1,43 @@
+section(class="se-contact text-center" id="contact")
+    div.container
+        div(class="text")
+            h1 Get Your Offer
+            p.mt-3 Hurry to contact us to welcome you in our own way and offer you a special offer for the nature of your business.<br> We were pleased with your presence and are happy to talk to you.
+        div(class="row contact-icon justify-content-center mt-5")
+            div(class="col-lg-6")
+                <i class="fas fa-mobile-alt icons-mbri"></i>
+                h4 Call Us On
+                p +201030912396
+            div(class="col-lg-6")
+                <i class="fas fa-envelope icons-mbri"></i>
+                h4 Email Us At
+                p.lowercass ae912396ae@gmail.com 
+        div(class="row mt-5")
+            form(action="PHPMailer/vendor/contact.php" , method="POST" class="control-form")
+                div(class="row")
+                    div.col-lg-12
+                        input(class="input user_form" type="text"  , placeholder="your name" ,name="username" required )
+                        p(class= " alert alert-danger red_error") username must be  larer than 3 characters
+                    div.col-lg-12
+                        input(class="input user_email" type="email", placeholder="your email" ,name="email" required)
+                    div.col-lg-6
+                        input(class="input user_city" type="text" , placeholder="your city"       ,name="city" required)
+                    div.col-lg-6
+                        input(class="input user_age" type="text" , placeholder="your age"       ,name="age" required)
+                        
+                    div.col-lg-6
+                        input(class="input user_phone" type="tel" , placeholder="your phone"       ,name="phone" required)
+                        
+                    div.col-lg-6
+                        label(for="site") do you have a web site:
+                        select(name="site")
+                            option(value="yas") yes
+                            option(value="no") No
+                    div.col-lg-12
+                        input(class="input user-sub" type="text"       , placeholder=" your subject"  , name="subject" required)
+                        p(class= " alert alert-danger red_error") username must be  larer than 10 characters
+                    div.col-lg-12
+                        textarea(class="input user_massage" name="massage" , placeholder=" your massage" required)
+                        p(class= " alert alert-danger red_error") username must be  larer than 10 characters
+                    div(class="col-lg-12 right-btu text-right")
+                        input(type="submit" , value="Get your Offer")

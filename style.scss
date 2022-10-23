@@ -1,0 +1,105 @@
+// main color var 
+$main-color     : white;
+$second-color   : black;
+$third-color    :#9c005e;
+$backC-main : #2e3135;
+$backC-second : #26282b;
+$iconeC     : #a0a0ac;
+$Ctext     : #cecece;
+
+/* global element */
+// font googel
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+html ,body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-transform: capitalize;
+   font-family: 'Nunito', sans-serif;
+   overflow-x: hidden;
+  }
+// defualt
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Montserrat', sans-serif !important;
+   font-weight: 600;
+}
+#logo {
+   padding-right:5px;
+   margin-right: 5px;
+}
+#logo2{
+   display: none
+}
+p {
+   color: $Ctext;
+}
+section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+a {text-decoration: none !important;}
+// custom class
+.img-thumbnail {
+      background-color: #3b3e42;
+      border: 1px solid #4d5052;
+}
+.persant {
+   color: $third-color;
+   font-size: 25px;
+   font-weight: 700;
+}
+.worksBc {
+   background-color: $third-color;
+}
+.ching {color: $third-color !important;}
+
+//   extend class 
+.white {
+   color: $main-color;
+}
+.icons-mbri {
+   color: $third-color;
+   }
+// up btu
+.up-btu {
+   background-color: $third-color;
+   text-align: center;
+   height: 35px;
+   width: 35px;
+   position: fixed;
+   z-index: 11;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 5px;
+   display: none;
+   cursor: pointer;
+   line-height: 35px;
+}
+.up-btu .fa-chevron-up {
+   font-size: 20px;
+   color: white;
+}
+
+/* header */
+@import "pages/_header.scss";
+/* Start section for About */
+@import "pages/_about.scss";   
+/* Start Section for se_services */
+@import "pages/_services.scss";
+/* Start For se_team */
+@import "pages/_team.scss";
+@import "pages/_ourpart.scss";
+// and custom curosal
+// @import "pages/customcurosal";
+/* Start for se_works */
+@import "pages/_works.scss";
+/* Start for se_contact */
+@import "pages/_contact.scss";
+/* Start for se_footer */
+@import "pages/_footer.scss";
+/* Start For custom boot strap */
+@import "pages/_custombst";
+// media query
+@import "pages/_mediaq.scss"
+
+/* End */

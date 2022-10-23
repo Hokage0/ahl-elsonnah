@@ -1,0 +1,16 @@
+.se_footer {
+    background-color: $second-color;
+    .socail {
+        @extend .white;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-color: rgba(241, 241, 241, 0.08);
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,405 @@
+/* global element */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700");
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+}
+
+#logo {
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+#logo2 {
+  display: none;
+}
+
+p {
+  color: #cecece;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.img-thumbnail {
+  background-color: #3b3e42;
+  border: 1px solid #4d5052;
+}
+
+.persant {
+  color: #9c005e;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.worksBc {
+  background-color: #9c005e;
+}
+
+.ching {
+  color: #9c005e !important;
+}
+
+.white, .se_footer .socail, .se-works, .se-ourpart, .se-team, .se-services {
+  color: white;
+}
+
+.icons-mbri {
+  color: #9c005e;
+}
+
+.up-btu {
+  background-color: #9c005e;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  position: fixed;
+  z-index: 11;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+.up-btu .fa-chevron-up {
+  font-size: 20px;
+  color: white;
+}
+
+/* header */
+#home {
+  background: url(images/backgroungImage.png) center no-repeat;
+  background-size: cover;
+}
+#home .overlay {
+  background-color: rgba(0, 0, 0, 0.72);
+  height: 100%;
+  overflow: hidden;
+}
+#home .overlay .customNav {
+  background-color: white;
+}
+#home .overlay .navbar {
+  transition: all 0.5s ease-in-out;
+}
+#home .overlay .navbar .navbar-brand a {
+  color: white;
+}
+#home .overlay .navbar .navbar-nav {
+  margin-left: auto;
+}
+#home .overlay .navbar .navbar-nav .nav-link {
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.05em;
+  margin: 0 10px;
+  line-height: 39px;
+  color: white;
+}
+#home .overlay .navbar .navbar-nav .nav-link:hover {
+  color: #9c005e !important;
+}
+#home .overlay .se-content {
+  height: 100%;
+}
+#home .overlay .se-content .table {
+  display: table;
+  height: 100%;
+}
+#home .overlay .se-content .table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#home .overlay .se-content .table .table-cell .content-header {
+  text-align: center;
+  color: white;
+}
+#home .overlay .se-content .table .table-cell .content-header #move {
+  font-weight: 700;
+  font-size: 50px;
+}
+#home .overlay .se-content .table .table-cell .content-header .typed-cursor {
+  font-weight: 800;
+  font-size: 58px;
+}
+#home .overlay .se-content .table .table-cell .content-header .Dportfolio a {
+  border: 2px solid white;
+  display: inline-block;
+  padding: 15px 32px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  transition: all 0.4s;
+  letter-spacing: 0.06em;
+}
+#home .overlay .se-content .table .table-cell .content-header .Dportfolio a:hover {
+  background-color: white;
+  color: black;
+}
+#home .overlay .se-content .table .table-cell .content-header .arrow {
+  position: absolute;
+  bottom: -25vh;
+  width: 100%;
+}
+#home .overlay .se-content .table .table-cell .content-header .arrow a {
+  height: 44px;
+  width: 28px;
+  line-height: 54px;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  color: #fff;
+  font-size: 10px;
+  animation: bounce 2s infinite;
+}
+#home .overlay .se-content .table .table-cell .content-header .arrow a::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 11px;
+  border-radius: 2px;
+  z-index: -1;
+  bottom: 0px;
+  transition: all 0.2s;
+  height: 10px;
+  width: 3px;
+  background: #fff;
+}
+
+/* Start section for About */
+.se-about {
+  background-color: #2e3135;
+  color: white;
+}
+.se-about .cot_about a {
+  color: #a0a0ac;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #6b6e6f;
+  line-height: 38px;
+  transition: all 0.5s;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* Start Section for se_services */
+.se-services {
+  background-color: #26282b;
+}
+.se-services .serv-cont {
+  height: 370px;
+  border: 1px solid #353941;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+.se-services .serv-cont .display-4 {
+  font-size: 2.5rem !important;
+}
+.se-services .serv-cont span {
+  font-size: 44px;
+}
+.se-services .serv-cont .line {
+  width: 40px;
+  height: 2px;
+  background-color: #9c005e;
+  border-radius: 5px;
+  margin: 15px auto;
+  transition: all 0.6s;
+}
+.se-services .serv-cont p {
+  color: #a0a0ac !important;
+}
+
+.serv-cont:hover .line {
+  width: 60px;
+}
+
+/* Start For se_team */
+.se-team {
+  background-color: #2e3135;
+}
+.se-team .mbri-quote {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: #9c005e;
+}
+.se-team .carousel-inner {
+  height: 320px;
+}
+
+.se-ourpart {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #26282b;
+}
+.se-ourpart .mbri-quote {
+  font-size: 50px;
+  color: #9c005e;
+}
+.se-ourpart .carousel-inner {
+  height: 280px;
+}
+
+/* Start for se_works */
+.se-works {
+  background-color: #26282b;
+}
+.se-works .butn span {
+  cursor: pointer;
+  border-radius: 30px;
+  letter-spacing: 0.03em;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 6px 16px;
+  transition: all 0.5s;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+.se-works .butn span:hover {
+  background-color: #9c005e;
+}
+.se-works .item {
+  padding: 15px;
+}
+.se-works .item .wor-cont {
+  background-color: black;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+.se-works .item .wor-cont .wor-hidden {
+  transition: all 0.4s linear;
+  position: absolute;
+  left: 35%;
+  top: -35%;
+}
+
+.se-works .wor-cont:hover .wor-hidden {
+  top: 35%;
+}
+
+/* Start for se_contact */
+/* Start for se_footer */
+.se_footer {
+  background-color: black;
+}
+.se_footer .socail {
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* Start For custom boot strap */
+.carousel-indicators li {
+  background-clip: padding-box;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  width: 12px;
+  height: 6px;
+  margin: 5px 4px;
+  filter: Alpha(Opacity=50);
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px !important;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  background-color: #9c005e;
+}
+.carousel-indicators .active {
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  header #move {
+    font-size: 30px !important;
+  }
+  header .typed-cursor {
+    font-size: 38px !important;
+  }
+
+  .se-works .butn span {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar-toggler {
+    background-color: white;
+  }
+  header #move {
+    font-size: 40px !important;
+  }
+  header .typed-cursor {
+    font-size: 48px !important;
+  }
+  header .navbar {
+    background-color: #10070ed3;
+  }
+  header .navbar .navbar-brand a {
+    padding: 10px;
+  }
+  header .navbar .nav-link {
+    padding-left: 10px;
+  }
+  header .arrow {
+    bottom: -15vh !important;
+  }
+}
+@media (max-width: 750px) {
+  header .navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  header .navbar .navbar-nav {
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+  header #move {
+    font-size: 27px !important;
+  }
+  header .typed-cursor {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 576px) {
+  .se-contact form {
+    padding: 10px;
+  }
+  .se-contact form select {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+.se-works {
+    background-color: $backC-second;
+    @extend .white;
+    .butn {
+        span {
+            cursor: pointer;
+            border-radius: 30px;
+            letter-spacing: 0.03em;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 6px 16px;
+            transition: all 0.5s;
+            margin-top: 5px;
+            margin-right: 15px;
+            &:hover {background-color: $third-color;}
+        }
+    }
+        .item{
+            padding: 15px;
+            .wor-cont {
+                background-color: black;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+                transition: all .4s linear;
+                border-radius: 5px;
+                .wor-hidden {
+                    transition: all .4s linear;
+                    position: absolute;
+                    left: 35%;
+                    top: -35%;
+                 }
+            }
+        }
+    }
+    .se-works .wor-cont:hover .wor-hidden {top: 35%;}

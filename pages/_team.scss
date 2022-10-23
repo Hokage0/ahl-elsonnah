@@ -1,0 +1,11 @@
+.se-team {
+    .mbri-quote {font-size: 50px; padding-bottom: 20px;color: $third-color}
+    @extend .white;
+    background-color: $backC-main;
+
+    .carousel-inner {
+        height: 320px;
+    }
+
+}
+
